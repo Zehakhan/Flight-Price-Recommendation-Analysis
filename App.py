@@ -6,7 +6,7 @@ from huggingface_hub import hf_hub_download
 # Download model from Hugging Face
 model_path = hf_hub_download(
     repo_id="hugginfaceismyid/Flight_PP",  # Your Hugging Face repo
-    filename="model_compressed.pkl"       # File name in the repo
+    filename="model.pkl"       # File name in the repo
 )
 
 # Load model
@@ -43,3 +43,4 @@ input_df = pd.DataFrame({
 if st.button("Predict Price"):
     prediction = model.predict(input_df)[0]
     st.success(f"Estimated Flight Price: ₹{int(prediction):,}")
+
