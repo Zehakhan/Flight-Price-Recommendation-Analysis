@@ -1,6 +1,8 @@
 streamlit
 pandas
 joblib
-huggingface_hub
-scikit-learn
+huggingface-hub
+numpy
+scikit-learn==1.6.1
+
 
